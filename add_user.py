@@ -16,8 +16,10 @@ def if_changed(setting):
 	:param setting:
 	:return: 模板的数据, 新增加的文件的数据
 	"""
-	with open(setting.model_new_user_name, 'r') as f:
-		model_all = f.read()
+	model_all = "web_name = \nnickname = \nuser_name = \npassword1 = \npassword2 = \nremark = \n" \
+				"[---------------split_line,don't_change---------------]\n" \
+				"web_name = \nnickname = \nuser_name = \npassword1 = \npassword2 = \nremark = \n" \
+				"[---------------split_line,don't_change---------------]\n"
 	try:
 		with open(setting.new_user_name, 'r') as f:
 			new_all = f.read()

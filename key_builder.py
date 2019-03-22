@@ -56,10 +56,21 @@ def save_dict(dict1, filename):
 		print('已经有秘钥了，不能再覆盖了。请删除秘钥后重试。')
 
 
+def build_new_user(setting):
+	if not os.path.exists(setting.new_user_name):
+		model_all = "web_name = \nnickname = \nuser_name = \npassword1 = \npassword2 = \nremark = \n" \
+					"[---------------split_line,don't_change---------------]\n" \
+					"web_name = \nnickname = \nuser_name = \npassword1 = \npassword2 = \nremark = \n" \
+					"[---------------split_line,don't_change---------------]\n"
+		with open(setting.new_user_name, 'w') as f:
+			f.write(model_all)
+
+
 def main():
 	setting = Setting()
 	secret_key_dict = build_clear_to_cipher_dict()
 	save_dict(secret_key_dict, setting.secret_key_name)
+	build_new_user(setting)
 
 
 if __name__ == '__main__':
