@@ -1,9 +1,13 @@
 ﻿# 密码管理器  
+
 ## 项目介绍  
+
 本项目是一个用python写的密码管理器，支持Windows和Android（搭配qpython使用）。  
 基于python3.6写的，python3应该通用，没有使用第三方库。  
-目前没有编译成程序。    
+目前没有编译成程序。  
+
 ## 使用方法  
+
 ### Windows  
 #### 1.点击右上角“Clone or download”把代码下载到本地。  
 #### 2.运行‘key_builder.py’生成秘钥。秘钥是‘files/secret_key.csy’文件。  
@@ -25,9 +29,21 @@
 #### 5.运行‘show_user.py’文件。  
 查看所有账户信息。***以后如果仅仅是查看数据，那只需要运行这个即可。***    
 #### 6.其他py文件说明：  
-	- delete_account.py：删除账户。输入网站名（也就是web_name这条属性，这是账户的唯一标识）即可。  
-	- output_all_data.py：输入明文账户信息。一般用不着，而且设备储存过明文数据没有覆写的话会有风险。  
-	- edit_namemapping.py：把数据迁移到不同平台的补丁。先留个坑吧，操作说明有点麻烦，肚子饿了要吃饭了，以后有时间再写。  
-	- setting.py：各种设置。一般不要动，先留坑，以后再写吧。  
+	-delete_account.py：删除账户。输入网站名（也就是web_name这条属性，这是账户的唯一标识）即可。  
+	-output_all_data.py：输入明文账户信息。一般用不着，而且设备储存过明文数据没有覆写的话会有风险。  
+	-edit_namemapping.py：把数据迁移到不同平台的补丁。先留个坑吧，操作说明有点麻烦，肚子饿了要吃饭了，以后有时间再写。  
+	-setting.py：各种设置。一般不要动，先留坑，以后再写吧。  
+
 ### Android  
-#### 1.在手机上安装QPython3
+#### 1.把根目录中除‘setting.py’以外的所有py文件复制到‘qpython_password_manager’文件夹中  
+#### 2.在手机上安装QPython3  
+请自行下载安装，我的是GooglePlay下的。  
+#### 3.把‘qpython_password_manager’文件夹移动到手机的/storage/emulated/0/qpython/projects3/文件夹中  
+如果没有project3那就放到project之类的都行，反正要在手机上用qpython运行时找的到。  
+#### 4.重命名‘files’文件夹为‘password_manager_files’，然后移动到手机sdcard根目录  
+手机上的文件路径为'/sdcard/password_manager_files/'，我用MIUI自带的文件管理打开看到的是‘/storage/emulated/0/password_manager_files/’结果应该是一样的。
+#### 5.在QPython3中运行‘edit_namemapping.py’  
+如果之前没有在PC上添加过用户，那么应该会报错，请直接跳过这一步。
+#### 6.其他步骤请参考windows下运行的第3、4、5条。
+注意new_user.txt文件的位置。
+
