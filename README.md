@@ -2,7 +2,7 @@
 
 ## 项目介绍  
 
-本项目是一个用python写的密码管理器，支持Windows和Android（搭配qpython使用）。  
+本项目是一个用python写的密码管理器，支持Windows和Android（搭配QPython3使用）。  
 基于python3.6写的，python3应该通用，没有使用第三方库。  
 目前没有编译成程序。  
 
