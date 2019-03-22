@@ -34,6 +34,7 @@
 	-edit_namemapping.py：把数据迁移到不同平台的补丁。先留个坑吧，操作说明有点麻烦，以后有时间再写。  
 	-setting.py：各种设置。不要动，先留坑，以后再写吧。  
 
+---------------------------
 ### Android  
 #### 1.在手机上安装QPython3  
 请自行下载安装，我的是GooglePlay下的。  
@@ -42,7 +43,7 @@
 #### 3.其他步骤请参考windows下运行的第2、3、4、5条。  
 ***注意new_user.txt和secret_key.csy文件的位置在'/sdcard/password_manager_files/'***，我用MIUI自带的文件管理打开看到的是‘/storage/emulated/0/password_manager_files/’，这是绝对文件路径。  
 这是因为读写权限的问题，只能放到sdcard的根目录，所以这里要麻烦一点。  
-
+--------------------------
 ### 文件迁移  
 如果之前在PC上运行过，已经有了数据，想要搬移到手机，那么请在执行完Android的第1、2步以后，看接下来的操作。  
 #### 1.把‘password_manager_files’文件夹移动到手机sdcard根目录  
