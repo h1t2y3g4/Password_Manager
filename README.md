@@ -41,7 +41,7 @@
 #### 2.把整个项目文件夹移动到手机的/storage/emulated/0/qpython/projects3/文件夹中  
 如果没有project3那就放到project之类的都行，反正要在手机上用qpython运行时找的到。  
 #### 3.其他步骤请参考windows下运行的第2、3、4、5条。  
-***注意new_user.txt和secret_key.csy文件的位置在'/sdcard/password_manager_files/'***，我用MIUI自带的文件管理打开看到的是‘/storage/emulated/0/password_manager_files/’，这是绝对文件路径。  
+***注意new_user.txt和secret_key.csy文件的位置在'/sdcard/password_manager_files/'*** ，我用MIUI自带的文件管理打开看到的是‘/storage/emulated/0/password_manager_files/’，这是绝对文件路径。  
 这是因为读写权限的问题，只能放到sdcard的根目录，所以这里要麻烦一点。  
 
 --------------------------
