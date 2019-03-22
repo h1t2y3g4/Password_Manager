@@ -1,1 +1,6 @@
-"# Password_Manager" 
+# 密码管理器  
+## 项目介绍  
+本项目是一个用python写的密码管理器，支持Windows和Android。  
+目前没有编译成程序。  
+## 使用方法  
+
