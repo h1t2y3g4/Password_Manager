@@ -47,10 +47,10 @@
 --------------------------
 ### 文件迁移  
 >如果之前在PC上运行过，已经有了数据，想要搬移到手机，那么请在执行完Android的第1、2步以后，看接下来的操作。  
-#### 1.把‘password_manager_files’文件夹移动到手机sdcard根目录  
+1.把‘password_manager_files’文件夹移动到手机sdcard根目录  
 >手机上的文件路径为'/sdcard/password_manager_files/'，或者是‘/storage/emulated/0/password_manager_files/’结果应该是一样的。  
-#### 2.在QPython3中运行‘edit_namemapping.py’文件  
+2.在QPython3中运行‘edit_namemapping.py’文件  
 >‘edit_namemapping.py’文件在/storage/emulated/0/qpython/projects3/password_manager/文件夹，  
 >如果之前没有在PC上添加过用户，那么应该会报错，请直接跳过这一步。  
-#### 2.在QPython3中运行‘show_user.py’文件  
+3.在QPython3中运行‘show_user.py’文件  
 
