@@ -21,7 +21,7 @@ def if_changed(setting):
 				"web_name = \nnickname = \nuser_name = \npassword1 = \npassword2 = \nremark = \n" \
 				"[---------------split_line,don't_change---------------]\n"
 	try:
-		with open(setting.new_user_name, 'r') as f:
+		with open(setting.new_user_name, 'r', encoding='utf-8') as f:
 			new_all = f.read()
 	except FileNotFoundError:
 		print("new_user.txt文件丢失。已修复问题，请重新添加。")

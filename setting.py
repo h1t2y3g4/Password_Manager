@@ -4,6 +4,7 @@ import os
 
 class Setting:
 	def __init__(self):
+		# path = os.path.split(os.path.realpath(__file__))[0]
 		self.windows_files_dir = 'password_manager_files/'  # Windows下的根目录
 		self.android_files_dir = '/sdcard/password_manager_files/'  # Linux下的根目录
 
