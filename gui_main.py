@@ -289,7 +289,7 @@ def save_data(users, setting, model_all, status):
 				with open(status.name_mapping[user.properties['web_name']], 'wb') as f:
 					pickle.dump(user.properties, f)
 				print('添加成功\n')
-				easygui.msgbox(msg='添加成功\n', title='密码管理器', ok_button='确定')
+				# easygui.msgbox(msg='添加成功\n', title='密码管理器', ok_button='确定')
 			else:
 				# 这里如果选择否，则跳过此user。实际上不管输入的是不是n都会取消掉更新。
 				continue
@@ -457,8 +457,7 @@ if __name__ == '__main__':
 		      '2、批量添加新账户之前请在“password_manager_files/new_user.csy”文件中填写新用户信息。\n' \
 		      '3、详情请查看Github：https://github.com/h1t2y3g4/Password_Manager\n' \
 		      'Copyright (c) 2019 陈守阳'
-		duty_result = easygui.indexbox(title='密码管理器', msg=msg, choices=['生成密钥', '添加/修改单个新账户', '批量添加/修改新账户', '查看所有账户', '删除账户', '退出程序'])
-		path = os.path.split(os.path.realpath(__file__))[0]
+		duty_result = easygui.indexbox(title='密码管理器', msg=msg, image='github.gif', choices=['生成密钥', '添加/修改单个新账户', '批量添加/修改新账户', '查看所有账户', '删除账户', '退出程序'])
 		if duty_result == 0:
 			key_builder_main()
 		elif duty_result == 1:

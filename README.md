@@ -9,6 +9,7 @@
 
 ### 2019-5-11更新   
 -新增 gui_main.py文件。全面图形化，在PC上可只依靠此文件运行。按操作提示运行即可。
+-windows平台编译出了exe程序，下载windows文件夹，点击“gui_main.exe”文件即可运行。
 
 ### Windows  
 
